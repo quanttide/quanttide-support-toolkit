@@ -6,6 +6,8 @@
 - 初始版本：跨语言契约测试（tests/：ticket/comment/solution Schema + Fixture，源自 docs/specification 的 JSON 示例）
 - `packages/dart`：Ticket × Comment × Solution Dart SDK（契约测试全绿）
 - `packages/typescript`：同构 TypeScript SDK + 解析校验（契约测试全绿）
+- `packages/go`：Go SDK（package quanttide_support，对外引用统一 quanttide-support 命名；契约测试全绿）
+- `packages/rust`：Rust crate quanttide-support（serde 模型 + 契约测试全绿）
 
 ## [0.0.1] - 2026-09-01
 

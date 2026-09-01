@@ -10,7 +10,10 @@ quanttide-support-toolkit/
 ├── CHANGELOG.md       # 变更日志
 ├── packages/
 │   ├── dart/          # Dart SDK（Ticket × Comment × Solution）
-│   └── typescript/    # TypeScript SDK（同构模型 + 解析校验）
+│   ├── typescript/    # TypeScript SDK（同构模型 + 解析校验）
+│   ├── go/            # Go SDK（pkg 包 quanttide_support）
+│   └── rust/          # Rust crate quanttide-support
+└── tests/             # 跨语言契约测试：schemas/（JSON Schema）+ fixtures/（标本）
 └── tests/             # 跨语言契约测试：schemas/（JSON Schema）+ fixtures/（标本）
 ```
 
@@ -32,4 +35,10 @@ cd packages/dart && dart pub get && dart test
 
 # TypeScript
 cd packages/typescript && npm install && npm run typecheck && npm test
+
+# Go
+cd packages/go && go test ./... -count=1
+
+# Rust
+cd packages/rust && cargo test
 ```

@@ -8,6 +8,8 @@
 |---|------|------|
 | `dart/` | ✅ 已对齐 | Ticket × Comment × Solution；JSON 标签 snake_case，与规范示例一致 |
 | `typescript/` | ✅ 已对齐 | 同构模型 + 解析校验（必填字段存在性、state 枚举） |
+| `go/` | ✅ 已对齐 | pkg 包 quanttide_support；契约测试零依赖（必填字段 + round-trip） |
+| `rust/` | ✅ 已对齐 | crate quanttide-support；serde 模型 + 集成测试 |
 
 ## 设计
 
@@ -40,6 +42,8 @@ packages/
 ```bash
 cd packages/dart && dart test
 cd packages/typescript && npm test
+cd packages/go && go test ./... -count=1
+cd packages/rust && cargo test
 ```
 
 ## 工作流

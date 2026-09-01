@@ -1,0 +1,10 @@
+[package]
+name = "quanttide-support"
+version = "0.1.0-alpha.1"
+edition = "2021"
+description = "量潮客户支持 Rust SDK（Ticket × Solution 领域模型）"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
