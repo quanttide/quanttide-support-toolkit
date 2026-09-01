@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Solution",
+  "properties": {
+    "id":      {"type": "string"},
+    "title":   {"type": "string"},
+    "content": {"type": "string"}
+  },
+  "required": ["id", "title", "content"]
+}

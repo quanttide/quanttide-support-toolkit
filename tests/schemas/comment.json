@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Comment",
+  "properties": {
+    "author":     {"type": "string"},
+    "body":       {"type": "string"},
+    "created_at": {"type": "string"}
+  },
+  "required": ["author", "body", "created_at"]
+}

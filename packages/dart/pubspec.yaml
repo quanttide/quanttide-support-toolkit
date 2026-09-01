@@ -1,0 +1,11 @@
+name: quanttide_support
+description: 量潮客户支持Dart SDK（Ticket × Solution 领域模型）
+version: 0.1.0-alpha.1
+homepage: https://github.com/quanttide/quanttide-support-toolkit
+repository: https://github.com/quanttide/quanttide-support-toolkit
+
+environment:
+  sdk: ^3.11.5
+
+dev_dependencies:
+  test: ^1.25.0
